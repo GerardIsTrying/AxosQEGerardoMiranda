@@ -14,9 +14,9 @@ test.describe('Tarea 6 De Octubre, Locators', () => {
   });
 
 test('¿Esta mostrando el username, password y boton de login para iniciar sesion?', async ({ page }) => {
-  await expect(page.locator('[id="user-name"]')).toBeVisible();
-  await expect(page.locator('[id="password"]')).toBeVisible();
-  await expect(page.locator('[id="login-button"]')).toBeVisible();
+  await expect(page.locator('#user-name')).toBeVisible();
+  await expect(page.locator('#password')).toBeVisible();
+  await expect(page.locator('#login-button')).toBeVisible();
 });
 
 });
